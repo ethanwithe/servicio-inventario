@@ -48,10 +48,4 @@ management:
   endpoint:
     health:
       show-details: always
-
-logging:
-  level:
-    com.gimnasio.servicioinventario: DEBUG
-    org.springframework.web: INFO
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+      

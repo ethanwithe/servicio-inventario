@@ -1,18 +1,13 @@
 INSERT INTO productos (nombre, categoria, precio, stock, estado, stock_minimo, ventas, descripcion, marca, proveedor, codigo_barras, fecha_registro, fecha_actualizacion) VALUES
--- Suplementos
 ('Proteína Whey 2kg', 'Suplementos', 89.90, 45, 'Disponible', 10, 128, 'Proteína de suero de leche de alta calidad', 'Optimum Nutrition', 'NutriSport', '7501234567890', NOW(), NOW()),
 ('Creatina Monohidratada', 'Suplementos', 45.00, 32, 'Disponible', 10, 95, 'Creatina pura micronizada', 'MuscleTech', 'NutriSport', '7501234567891', NOW(), NOW()),
 ('Aminoácidos BCAA', 'Suplementos', 55.00, 28, 'Disponible', 10, 78, 'BCAA 2:1:1 en polvo', 'Scivation', 'NutriSport', '7501234567892', NOW(), NOW()),
 ('Pre-Workout', 'Suplementos', 65.00, 8, 'Stock Bajo', 10, 65, 'Fórmula pre-entrenamiento con cafeína', 'C4', 'NutriSport', '7501234567893', NOW(), NOW()),
 ('Proteína Vegana', 'Suplementos', 95.00, 15, 'Disponible', 10, 45, 'Proteína a base de plantas', 'Vega', 'NutriSport', '7501234567894', NOW(), NOW()),
 ('Glutamina', 'Suplementos', 48.00, 20, 'Disponible', 10, 52, 'L-Glutamina pura en polvo', 'Universal', 'NutriSport', '7501234567895', NOW(), NOW()),
-
--- Snacks
 ('Barras Proteicas (caja 12)', 'Snacks', 35.00, 52, 'Disponible', 15, 142, 'Barras con 20g de proteína', 'Quest', 'Alimentos Fitness', '7501234567896', NOW(), NOW()),
 ('Galletas Proteicas', 'Snacks', 28.00, 38, 'Disponible', 15, 68, 'Galletas bajas en azúcar', 'FitCookie', 'Alimentos Fitness', '7501234567897', NOW(), NOW()),
 ('Chips Proteicos', 'Snacks', 22.00, 25, 'Disponible', 15, 41, 'Snack crujiente alto en proteína', 'ProteinChips', 'Alimentos Fitness', '7501234567898', NOW(), NOW()),
-
--- Accesorios
 ('Shaker Deportivo', 'Accesorios', 15.00, 85, 'Disponible', 20, 215, 'Vaso mezclador con compartimentos', 'BlenderBottle', 'Fitness Gear', '7501234567899', NOW(), NOW()),
 ('Guantes de Entrenamiento', 'Accesorios', 25.00, 5, 'Stock Bajo', 10, 48, 'Guantes acolchados para levantamiento', 'Harbinger', 'Fitness Gear', '7501234567900', NOW(), NOW()),
 ('Toalla Deportiva', 'Accesorios', 20.00, 62, 'Disponible', 15, 98, 'Toalla de microfibra absorbente', 'Nike', 'Fitness Gear', '7501234567901', NOW(), NOW()),
@@ -21,17 +16,13 @@ INSERT INTO productos (nombre, categoria, precio, stock, estado, stock_minimo, v
 ('Muñequeras', 'Accesorios', 18.00, 30, 'Disponible', 10, 54, 'Wraps de muñeca elásticos', 'Schiek', 'Fitness Gear', '7501234567904', NOW(), NOW()),
 ('Banda Elástica', 'Accesorios', 12.00, 48, 'Disponible', 15, 76, 'Banda de resistencia media', 'TheraBand', 'Fitness Gear', '7501234567905', NOW(), NOW()),
 ('Colchoneta Yoga', 'Accesorios', 55.00, 22, 'Disponible', 10, 38, 'Colchoneta antideslizante 6mm', 'Manduka', 'Fitness Gear', '7501234567906', NOW(), NOW()),
-
--- Ropa
 ('Camiseta Gimnasio', 'Ropa', 35.00, 3, 'Stock Bajo', 10, 72, 'Camiseta Dry-Fit', 'Adidas', 'Sport Fashion', '7501234567907', NOW(), NOW()),
 ('Short Deportivo', 'Ropa', 40.00, 28, 'Disponible', 10, 54, 'Short con tecnología Climacool', 'Reebok', 'Sport Fashion', '7501234567908', NOW(), NOW()),
 ('Leggings Mujer', 'Ropa', 55.00, 16, 'Disponible', 10, 62, 'Mallas de compresión', 'Gymshark', 'Sport Fashion', '7501234567909', NOW(), NOW()),
 ('Top Deportivo', 'Ropa', 45.00, 20, 'Disponible', 10, 48, 'Top con soporte medio', 'Under Armour', 'Sport Fashion', '7501234567910', NOW(), NOW());
 
 
--- Insertar máquinas
 INSERT INTO maquinas (nombre, zona, marca, modelo, estado, ultimo_mantenimiento, proximo_mantenimiento, fecha_adquisicion, descripcion, numero_serie, horas_uso, fecha_registro, fecha_actualizacion) VALUES
--- Zona Cardio
 ('Cinta de Correr Pro X1', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-10-01', '2026-01-01', '2023-01-15', 'Cinta profesional con inclinación automática', 'TG-RUN-001', 2500, NOW(), NOW()),
 ('Cinta de Correr Pro X2', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-10-01', '2026-01-01', '2023-01-15', 'Cinta profesional con inclinación automática', 'TG-RUN-002', 2300, NOW(), NOW()),
 ('Cinta de Correr Pro X3', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-09-28', '2025-12-28', '2023-02-10', 'Cinta profesional con inclinación automática', 'TG-RUN-003', 2100, NOW(), NOW()),
@@ -42,8 +33,6 @@ INSERT INTO maquinas (nombre, zona, marca, modelo, estado, ultimo_mantenimiento,
 ('Remo Indoor', 'Cardio', 'Concept2', 'Model D', 'Fuera de Servicio', '2025-08-15', '2025-11-15', '2022-11-05', 'Remo ergométrico profesional', 'C2-ROWD-001', 3200, NOW(), NOW()),
 ('Escaladora', 'Cardio', 'StairMaster', '8G', 'Mantenimiento', '2025-10-12', '2026-01-12', '2023-06-15', 'Escaladora con pantalla LCD', 'SM-8G-001', 1400, NOW(), NOW()),
 ('Bicicleta de Spinning', 'Cardio', 'Schwinn', 'IC4', 'Operativa', '2025-10-08', '2026-01-08', '2023-07-20', 'Bicicleta de spinning profesional', 'SW-IC4-001', 1200, NOW(), NOW()),
-
--- Zona Pesas
 ('Press de Pecho', 'Pesas', 'Hammer Strength', 'PLCP', 'Operativa', '2025-09-15', '2025-12-15', '2022-08-10', 'Press de pecho convergente', 'HS-PLCP-001', 2800, NOW(), NOW()),
 ('Leg Press 45°', 'Pesas', 'Life Fitness', 'LP45', 'Mantenimiento', '2025-10-10', '2026-01-10', '2022-09-20', 'Prensa de piernas a 45 grados', 'LF-LP45-001', 3100, NOW(), NOW()),
 ('Máquina Smith', 'Pesas', 'TechnoGym', 'Pure Strength', 'Operativa', '2025-09-20', '2025-12-20', '2022-10-15', 'Smith machine con guías lineales', 'TG-PS-001', 2650, NOW(), NOW()),
@@ -52,7 +41,5 @@ INSERT INTO maquinas (nombre, zona, marca, modelo, estado, ultimo_mantenimiento,
 ('Prensa de Hombros', 'Pesas', 'Hammer Strength', 'PLSP', 'Operativa', '2025-09-18', '2025-12-18', '2022-11-20', 'Press de hombros sentado', 'HS-PLSP-001', 2400, NOW(), NOW()),
 ('Extensión de Piernas', 'Pesas', 'Life Fitness', 'SL40', 'Operativa', '2025-10-01', '2026-01-01', '2023-03-05', 'Extensión de cuádriceps', 'LF-SL40-001', 1750, NOW(), NOW()),
 ('Curl de Piernas', 'Pesas', 'Life Fitness', 'SL42', 'Operativa', '2025-10-01', '2026-01-01', '2023-03-05', 'Curl de femoral acostado', 'LF-SL42-001', 1680, NOW(), NOW()),
-
--- Zona Funcional
 ('Rack Funcional', 'Funcional', 'Rogue', 'RML-390F', 'Operativa', '2025-09-22', '2025-12-22', '2023-05-10', 'Rack para entrenamiento funcional', 'RG-RML-001', 1200, NOW(), NOW()),
 ('Máquina de Remo', 'Funcional', 'Concept2', 'Model E', 'Operativa', '2025-10-06', '2026-01-06', '2023-06-18', 'Remo ergométrico elevado', 'C2-ROWE-001', 980, NOW(), NOW());
