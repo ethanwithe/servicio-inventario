@@ -1,3 +1,25 @@
+INSERT INTO maquinas (nombre, zona, marca, modelo, estado, ultimo_mantenimiento, proximo_mantenimiento, fecha_adquisicion, descripcion, numero_serie, horas_uso, fecha_registro, fecha_actualizacion) VALUES
+('Cinta de Correr Pro X1', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-10-01', '2026-01-01', '2023-01-15', 'Cinta profesional con inclinación automática', 'TG-RUN-001', 2500, NOW(), NOW()),
+('Cinta de Correr Pro X2', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-10-01', '2026-01-01', '2023-01-15', 'Cinta profesional con inclinación automática', 'TG-RUN-002', 2300, NOW(), NOW()),
+('Cinta de Correr Pro X3', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-09-28', '2025-12-28', '2023-02-10', 'Cinta profesional con inclinación automática', 'TG-RUN-003', 2100, NOW(), NOW()),
+('Bicicleta Estática Elite', 'Cardio', 'Life Fitness', 'IC7', 'Operativa', '2025-09-28', '2025-12-28', '2023-03-20', 'Bicicleta con monitor integrado', 'LF-IC7-001', 1800, NOW(), NOW()),
+('Bicicleta Estática Elite 2', 'Cardio', 'Life Fitness', 'IC7', 'Operativa', '2025-10-03', '2026-01-03', '2023-03-20', 'Bicicleta con monitor integrado', 'LF-IC7-002', 1650, NOW(), NOW()),
+('Elíptica Cross Trainer', 'Cardio', 'Precor', 'EFX 885', 'Operativa', '2025-10-05', '2026-01-05', '2023-04-10', 'Elíptica con resistencia variable', 'PR-EFX-001', 1950, NOW(), NOW()),
+('Elíptica Cross Trainer 2', 'Cardio', 'Precor', 'EFX 885', 'Operativa', '2025-10-05', '2026-01-05', '2023-04-10', 'Elíptica con resistencia variable', 'PR-EFX-002', 1820, NOW(), NOW()),
+('Remo Indoor', 'Cardio', 'Concept2', 'Model D', 'Fuera de Servicio', '2025-08-15', '2025-11-15', '2022-11-05', 'Remo ergométrico profesional', 'C2-ROWD-001', 3200, NOW(), NOW()),
+('Escaladora', 'Cardio', 'StairMaster', '8G', 'Mantenimiento', '2025-10-12', '2026-01-12', '2023-06-15', 'Escaladora con pantalla LCD', 'SM-8G-001', 1400, NOW(), NOW()),
+('Bicicleta de Spinning', 'Cardio', 'Schwinn', 'IC4', 'Operativa', '2025-10-08', '2026-01-08', '2023-07-20', 'Bicicleta de spinning profesional', 'SW-IC4-001', 1200, NOW(), NOW()),
+('Press de Pecho', 'Pesas', 'Hammer Strength', 'PLCP', 'Operativa', '2025-09-15', '2025-12-15', '2022-08-10', 'Press de pecho convergente', 'HS-PLCP-001', 2800, NOW(), NOW()),
+('Leg Press 45°', 'Pesas', 'Life Fitness', 'LP45', 'Mantenimiento', '2025-10-10', '2026-01-10', '2022-09-20', 'Prensa de piernas a 45 grados', 'LF-LP45-001', 3100, NOW(), NOW()),
+('Máquina Smith', 'Pesas', 'TechnoGym', 'Pure Strength', 'Operativa', '2025-09-20', '2025-12-20', '2022-10-15', 'Smith machine con guías lineales', 'TG-PS-001', 2650, NOW(), NOW()),
+('Polea Alta/Baja', 'Pesas', 'Matrix', 'G3-MS50', 'Operativa', '2025-10-03', '2026-01-03', '2023-01-08', 'Polea dual ajustable', 'MX-G3-001', 1850, NOW(), NOW()),
+('Banco Ajustable', 'Pesas', 'Rogue', 'AB-3', 'Operativa', '2025-09-25', '2025-12-25', '2023-02-14', 'Banco ajustable multipropósito', 'RG-AB3-001', 1600, NOW(), NOW()),
+('Prensa de Hombros', 'Pesas', 'Hammer Strength', 'PLSP', 'Operativa', '2025-09-18', '2025-12-18', '2022-11-20', 'Press de hombros sentado', 'HS-PLSP-001', 2400, NOW(), NOW()),
+('Extensión de Piernas', 'Pesas', 'Life Fitness', 'SL40', 'Operativa', '2025-10-01', '2026-01-01', '2023-03-05', 'Extensión de cuádriceps', 'LF-SL40-001', 1750, NOW(), NOW()),
+('Curl de Piernas', 'Pesas', 'Life Fitness', 'SL42', 'Operativa', '2025-10-01', '2026-01-01', '2023-03-05', 'Curl de femoral acostado', 'LF-SL42-001', 1680, NOW(), NOW()),
+('Rack Funcional', 'Funcional', 'Rogue', 'RML-390F', 'Operativa', '2025-09-22', '2025-12-22', '2023-05-10', 'Rack para entrenamiento funcional', 'RG-RML-001', 1200, NOW(), NOW()),
+('Máquina de Remo', 'Funcional', 'Concept2', 'Model E', 'Operativa', '2025-10-06', '2026-01-06', '2023-06-18', 'Remo ergométrico elevado', 'C2-ROWE-001', 980, NOW(), NOW());
+
 INSERT INTO productos (nombre, categoria, precio, stock, estado, stock_minimo, ventas, descripcion, marca, proveedor, codigo_barras, fecha_registro, fecha_actualizacion) VALUES
 ('Proteína Whey 2kg', 'Suplementos', 89.90, 45, 'Disponible', 10, 128, 'Proteína de suero de leche de alta calidad', 'Optimum Nutrition', 'NutriSport', '7501234567890', NOW(), NOW()),
 ('Creatina Monohidratada', 'Suplementos', 45.00, 32, 'Disponible', 10, 95, 'Creatina pura micronizada', 'MuscleTech', 'NutriSport', '7501234567891', NOW(), NOW()),
@@ -22,24 +44,3 @@ INSERT INTO productos (nombre, categoria, precio, stock, estado, stock_minimo, v
 ('Top Deportivo', 'Ropa', 45.00, 20, 'Disponible', 10, 48, 'Top con soporte medio', 'Under Armour', 'Sport Fashion', '7501234567910', NOW(), NOW());
 
 
-INSERT INTO maquinas (nombre, zona, marca, modelo, estado, ultimo_mantenimiento, proximo_mantenimiento, fecha_adquisicion, descripcion, numero_serie, horas_uso, fecha_registro, fecha_actualizacion) VALUES
-('Cinta de Correr Pro X1', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-10-01', '2026-01-01', '2023-01-15', 'Cinta profesional con inclinación automática', 'TG-RUN-001', 2500, NOW(), NOW()),
-('Cinta de Correr Pro X2', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-10-01', '2026-01-01', '2023-01-15', 'Cinta profesional con inclinación automática', 'TG-RUN-002', 2300, NOW(), NOW()),
-('Cinta de Correr Pro X3', 'Cardio', 'TechnoGym', 'Run 700', 'Operativa', '2025-09-28', '2025-12-28', '2023-02-10', 'Cinta profesional con inclinación automática', 'TG-RUN-003', 2100, NOW(), NOW()),
-('Bicicleta Estática Elite', 'Cardio', 'Life Fitness', 'IC7', 'Operativa', '2025-09-28', '2025-12-28', '2023-03-20', 'Bicicleta con monitor integrado', 'LF-IC7-001', 1800, NOW(), NOW()),
-('Bicicleta Estática Elite 2', 'Cardio', 'Life Fitness', 'IC7', 'Operativa', '2025-10-03', '2026-01-03', '2023-03-20', 'Bicicleta con monitor integrado', 'LF-IC7-002', 1650, NOW(), NOW()),
-('Elíptica Cross Trainer', 'Cardio', 'Precor', 'EFX 885', 'Operativa', '2025-10-05', '2026-01-05', '2023-04-10', 'Elíptica con resistencia variable', 'PR-EFX-001', 1950, NOW(), NOW()),
-('Elíptica Cross Trainer 2', 'Cardio', 'Precor', 'EFX 885', 'Operativa', '2025-10-05', '2026-01-05', '2023-04-10', 'Elíptica con resistencia variable', 'PR-EFX-002', 1820, NOW(), NOW()),
-('Remo Indoor', 'Cardio', 'Concept2', 'Model D', 'Fuera de Servicio', '2025-08-15', '2025-11-15', '2022-11-05', 'Remo ergométrico profesional', 'C2-ROWD-001', 3200, NOW(), NOW()),
-('Escaladora', 'Cardio', 'StairMaster', '8G', 'Mantenimiento', '2025-10-12', '2026-01-12', '2023-06-15', 'Escaladora con pantalla LCD', 'SM-8G-001', 1400, NOW(), NOW()),
-('Bicicleta de Spinning', 'Cardio', 'Schwinn', 'IC4', 'Operativa', '2025-10-08', '2026-01-08', '2023-07-20', 'Bicicleta de spinning profesional', 'SW-IC4-001', 1200, NOW(), NOW()),
-('Press de Pecho', 'Pesas', 'Hammer Strength', 'PLCP', 'Operativa', '2025-09-15', '2025-12-15', '2022-08-10', 'Press de pecho convergente', 'HS-PLCP-001', 2800, NOW(), NOW()),
-('Leg Press 45°', 'Pesas', 'Life Fitness', 'LP45', 'Mantenimiento', '2025-10-10', '2026-01-10', '2022-09-20', 'Prensa de piernas a 45 grados', 'LF-LP45-001', 3100, NOW(), NOW()),
-('Máquina Smith', 'Pesas', 'TechnoGym', 'Pure Strength', 'Operativa', '2025-09-20', '2025-12-20', '2022-10-15', 'Smith machine con guías lineales', 'TG-PS-001', 2650, NOW(), NOW()),
-('Polea Alta/Baja', 'Pesas', 'Matrix', 'G3-MS50', 'Operativa', '2025-10-03', '2026-01-03', '2023-01-08', 'Polea dual ajustable', 'MX-G3-001', 1850, NOW(), NOW()),
-('Banco Ajustable', 'Pesas', 'Rogue', 'AB-3', 'Operativa', '2025-09-25', '2025-12-25', '2023-02-14', 'Banco ajustable multipropósito', 'RG-AB3-001', 1600, NOW(), NOW()),
-('Prensa de Hombros', 'Pesas', 'Hammer Strength', 'PLSP', 'Operativa', '2025-09-18', '2025-12-18', '2022-11-20', 'Press de hombros sentado', 'HS-PLSP-001', 2400, NOW(), NOW()),
-('Extensión de Piernas', 'Pesas', 'Life Fitness', 'SL40', 'Operativa', '2025-10-01', '2026-01-01', '2023-03-05', 'Extensión de cuádriceps', 'LF-SL40-001', 1750, NOW(), NOW()),
-('Curl de Piernas', 'Pesas', 'Life Fitness', 'SL42', 'Operativa', '2025-10-01', '2026-01-01', '2023-03-05', 'Curl de femoral acostado', 'LF-SL42-001', 1680, NOW(), NOW()),
-('Rack Funcional', 'Funcional', 'Rogue', 'RML-390F', 'Operativa', '2025-09-22', '2025-12-22', '2023-05-10', 'Rack para entrenamiento funcional', 'RG-RML-001', 1200, NOW(), NOW()),
-('Máquina de Remo', 'Funcional', 'Concept2', 'Model E', 'Operativa', '2025-10-06', '2026-01-06', '2023-06-18', 'Remo ergométrico elevado', 'C2-ROWE-001', 980, NOW(), NOW());
