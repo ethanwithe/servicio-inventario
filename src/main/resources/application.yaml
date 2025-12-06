@@ -20,9 +20,8 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
     sql:
-      init:
-        mode: always        # ⬅ Ejecuta data.sql siempre
-        schema-locations: classpath:inventario.sql
+      init:     # ⬅ Ejecuta data.sql siempre
+        data-locations: classpath:data_inventario.sql
         encoding: UTF-8     # ⬅ Evita errores de caracteres
       
 server:
